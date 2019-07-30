@@ -1,0 +1,184 @@
+/*******************************************************************************
+ * General & Typography
+ */
+
+
+/* Try to create some "text rhythm". Maybe this is bogus. */
+body {
+  /*font: 12px Helvetica, "Helvetica Neue", Arial;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;*/
+  line-height: 1.5em; /* 18px @ 12px * 1.5em per basic line */
+}
+
+code, pre {
+  background-color: #EEEEEE;
+  padding: 1em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+}
+
+
+h1 {
+  font-size: 2em;     /* 24px @ 2 * 12px; */
+  line-height: 1.5em; /* 32px @ 1.5 * 24px */
+  margin: 0.7500em 0; /* 18px @ .75px * 24px */
+}
+h2 {
+  color: #444444;
+  font-size: 1.8em;      /* 21.6px @ 1.8 * 12px; */
+  line-height: 1.4815em; /* 32px @ 1.4815 * 21.6px */
+  margin: 0.8333em 0;    /* 18px @ .8333px * 21.6px */
+}
+h3 {
+  color: #888888;
+  font-size: 1.6em;      /* 19.2px @ 1.6 * 12px; */
+  line-height: 1.6667em; /* 32px @ 1.6667 * 19.2px */
+  margin: 0.9375em 0;    /* 18px @ .9375px * 19.2px */
+}
+h4 {
+  color: #cccccc;
+  font-size: 1.4em;      /* 16.8px @ 1.6 * 12px; */
+  line-height: 1.0714em; /* 18px @ 1.0714 * 16.8px */
+  margin: 1.0714em 0;    /* 18px @ 1.0714px * 16.8px */
+}
+h5/*, code, pre*/ {
+  font-size: 1.2em;    /* 14.4px @ 1.2 * 12px; */
+  line-height: 1.25em; /* 18px @ 1.25 * 14.4px */
+  margin: 1.25em 0;    /* 18px @ 1.25px * 14.4px */
+}
+h6, p {
+  font-size: 1em;     /* 12px @ 1 * 12px; */
+  line-height: 1.5em; /* 18px @ 1.5 * 12px */
+  margin: 1.5em 0;    /* 18px @ 1.5px * 12px */
+}
+
+/*******************************************************************************
+ * Lists
+ */
+
+
+dl,
+menu,
+ol,
+ul {
+    margin: 0;
+}
+
+dd {
+    margin: 0 0 0 40px;
+}
+
+li {
+  /*margin: 0;*/
+  /*padding: 0;*/
+}
+
+menu,
+ol,
+ul {
+  /*padding: 0;*/
+  padding: 0.25em 1em;
+}
+
+/**
+ * Correct list images handled incorrectly in IE 7.
+ */
+
+nav ul,
+nav ol {
+    list-style: none;
+    list-style-image: none;
+}
+
+
+/*******************************************************************************
+ * Site Title/Header/Nav
+ */
+
+.dropdown-header {
+    font-size: 1em;
+    font-size: 1.4rem;
+    margin-left: -1rem;
+}
+.navbar-collapse {
+  /*padding-left: 0px !important;
+  padding-right: 0px !important;*/
+}
+.title-nav {
+  /*border-bottom: 20px solid #e44d26;*/
+  /*border-bottom: 5px solid #000000;*/
+}
+.title-nav h1 {
+  font-family: "Monaco", "Lucida Console", "Consolas", "Lucida Sans Typewriter", Lucida, "Ubuntu Monospace", monospace;
+  font-weight: 500;
+}
+.title-nav h1 a {
+  color: #ffffff;
+  font-size: 1.5em;
+  font-size: 3rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+  text-shadow: 1px 1px 1px #000000,
+              -1px 1px 1px #000000,
+               1px -1px 1px #000000,
+              -1px -1px 1px #000000;
+}
+.title-nav h1 strong {
+  color: #000000;
+  font-size: 3em;
+  font-size: 6rem;
+  margin-right: -1.25em; 
+  text-shadow: none;
+  /*vertical-align: super;*/
+}
+.title-nav h1 a {
+  text-decoration: none;
+}
+.title-nav .nav > li > a {
+  padding: 15px 10px;
+}
+.title-nav .navbar-default,
+.panel-default > .panel-heading {
+  background-image: linear-gradient(to bottom, #FFF 0px, #FFEDA8 100%);
+}
+
+
+/*******************************************************************************
+ * Aside
+ */
+aside.panel {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/*******************************************************************************
+ * Forms
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 1em;
+  padding: 1em;
+}
+
+legend {
+  border: none;
+  display: inherit;
+  font-size: inherit;
+  margin: 0;
+  padding: 0 0.5em;
+  width: inherit;
+}
+
+
+/*******************************************************************************
+ * Site Footer
+ */
+footer.site-footer {
+  border-top: 1px solid #EEE;
+  margin-top: 20px;
+  padding: 20px 0;
+}
+footer.site-footer p {
+  text-align: center;
+}
