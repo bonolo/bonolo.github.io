@@ -2,56 +2,90 @@
  * General & Typography
  */
 
-
-/* Try to create some "text rhythm". Maybe this is bogus. */
-body {
-  /*font: 12px Helvetica, "Helvetica Neue", Arial;
-  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;*/
-  line-height: 1.5em; /* 18px @ 12px * 1.5em per basic line */
+html {
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  line-height: 1.5em;
+  font-family: Helvetica, "Helvetica Neue", Arial;
+  text-rendering: optimizeLegibility;
 }
 
-code, pre {
+pre {
   background-color: #EEEEEE;
-  padding: 1em;
+  border: 1px solid #d1d5da;
+  border-radius: 5px;
+  padding: 0.75em;
 }
+code {
+  display: inline-block;
+  /* font-weight: bold; */
+  background-color: #EEEEEE;
+  border-radius: 3px;
+  padding: 0 0.5em;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  background-color: #fff;
+  border-radius: none;
+  padding: 0;
+
+}
 
 h1 {
-  font-size: 2em;     /* 24px @ 2 * 12px; */
-  line-height: 1.5em; /* 32px @ 1.5 * 24px */
-  margin: 0.7500em 0; /* 18px @ .75px * 24px */
+  font-size: 2em;
+  /* Sets the line height to 2 units of vertical rhythm */
+  line-height: 1.5em; /* 3rem / 2em = 1.5em */
+  /* Sets 1 unit of vertical rhythm on the top and bottom margins. */
+  margin-top: 0.75em; /* 1.5rem / 2em = .75em */
+  margin-bottom: 0.75em;
 }
+
 h2 {
-  color: #444444;
-  font-size: 1.8em;      /* 21.6px @ 1.8 * 12px; */
-  line-height: 1.4815em; /* 32px @ 1.4815 * 21.6px */
-  margin: 0.8333em 0;    /* 18px @ .8333px * 21.6px */
+  font-size: 1.5em;
+  line-height: 2em; /* 3rem / 1.5em = 2em */
+  margin-top: 1em; /* 1.5rem / 1.5em = 1em */
+  margin-bottom: 1em;
 }
+
 h3 {
-  color: #888888;
-  font-size: 1.6em;      /* 19.2px @ 1.6 * 12px; */
-  line-height: 1.6667em; /* 32px @ 1.6667 * 19.2px */
-  margin: 0.9375em 0;    /* 18px @ .9375px * 19.2px */
+  font-size: 1.17em;
+  line-height: 1.282em; /* 1.5rem / 1.17em = 1.282em */
+  margin-top: 1.282em;
+  margin-bottom: 1.282em;
 }
+
 h4 {
-  color: #cccccc;
-  font-size: 1.4em;      /* 16.8px @ 1.6 * 12px; */
-  line-height: 1.0714em; /* 18px @ 1.0714 * 16.8px */
-  margin: 1.0714em 0;    /* 18px @ 1.0714px * 16.8px */
+  font-size: 1em;
+  line-height: 1.5em; /* 1.5rem / 1em = 1.5em */
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
-h5/*, code, pre*/ {
-  font-size: 1.2em;    /* 14.4px @ 1.2 * 12px; */
-  line-height: 1.25em; /* 18px @ 1.25 * 14.4px */
-  margin: 1.25em 0;    /* 18px @ 1.25px * 14.4px */
+
+h5 {
+  font-size: 0.83em;
+  line-height: 1.807em; /* 1.5rem / 0.83em = 1.807em */
+  margin-top: 1.807em;
+  margin-bottom: 1.807em;
 }
-h6, p {
-  font-size: 1em;     /* 12px @ 1 * 12px; */
-  line-height: 1.5em; /* 18px @ 1.5 * 12px */
-  margin: 1.5em 0;    /* 18px @ 1.5px * 12px */
+
+h6 {
+  font-size: 0.75em;
+  line-height: 2em; /* 1.5rem / .75em = 2em */
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+
+@media print
+{
+    h1, h2, h3, h4, h5, h6, pre, div {
+        page-break-inside: avoid;
+    }
 }
 
 /*******************************************************************************
@@ -70,26 +104,12 @@ dd {
     margin: 0 0 0 40px;
 }
 
-li {
-  /*margin: 0;*/
-  /*padding: 0;*/
-}
+li {font-size: 1em; line-height: 1.5em;}
 
 menu,
 ol,
 ul {
-  /*padding: 0;*/
   padding: 0.25em 1em;
-}
-
-/**
- * Correct list images handled incorrectly in IE 7.
- */
-
-nav ul,
-nav ol {
-    list-style: none;
-    list-style-image: none;
 }
 
 
@@ -128,7 +148,7 @@ nav ol {
   color: #000000;
   font-size: 3em;
   font-size: 6rem;
-  margin-right: -1.25em; 
+  margin-right: -1.25em;
   text-shadow: none;
   /*vertical-align: super;*/
 }
